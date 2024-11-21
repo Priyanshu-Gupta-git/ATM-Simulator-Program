@@ -2,9 +2,20 @@ import datetime
 now = datetime.datetime.now()
 password = "1234"
 balance = 100
-print("\033[106;31m"," ".rjust(50,"*"))
-print("\033[41mWelcome\033[106;31m".center(63))
-print(" ".ljust(50,"*"))
+print("\033[106;31m"," ".rjust(75,"-"))
+print('''\033[95;43m
+__        __   _                                       _             
+\ \      / /__| | ___ ___  _ __ ___   ___         ___ | |_           
+ \ \ /\ / / _ \ |/ __/ _ \| '_ ` _ \ / _ \       / _ \| __|          
+  \ V  V /  __/ | (_| (_) | | | | | |  __/      | (_) | |_           
+   \_/\_/ \___|_|\___\___/|_|_|_| |_|\___|       \___/ \__|          
+ _ __ ___  _   _        / \|_   _|  \/  |                            
+| '_ ` _ \| | | |      / _ \ | | | |\/| |                            
+| | | | | | |_| |     / ___ \| | | |  | |                            
+|_| |_| |_|\__, |    /_/   \_\_| |_|  |_|                            
+           |___/                                              \033[0m''')
+
+print("\033[91;41m"" ".ljust(75,"-"))
 print("\nEnter <1> Check Balance")
 print("Enter <2> Deposit Money")
 print("Enter <3> Withdraw Money")
